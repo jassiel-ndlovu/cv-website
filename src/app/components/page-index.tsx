@@ -1,3 +1,5 @@
+"use client";
+
 import { usePathname } from "next/navigation";
 
 export default function PageIndex({ url, url2 }: { url: string; url2?: string; }) {
