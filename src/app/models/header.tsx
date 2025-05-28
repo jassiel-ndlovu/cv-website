@@ -23,7 +23,7 @@ export default function Header() {
           </p>
         </div>
       </div>
-      <button className="py-2 px-4 flex items-center gap-2 bg-primary-color rounded-2xl text-sm text-white font-medium">
+      <button className="py-2 px-4 flex items-center gap-2 bg-primary-color text-sm text-white font-medium">
         <File className="w-4 h-5"/>
         <span>Download CV</span>
       </button>

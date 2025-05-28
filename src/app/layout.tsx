@@ -22,19 +22,19 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <div className="px-16 pb-8 bg-linear-180 from-lightgray to-darkgray">
+        <div className="px-16 pb-8">
           {/* Top Header and Nav */}
           <Header />
           <Nav />
 
           {/* Main Content Area */}
-          <main className="p-2 my-8 h-[35rem] flex gap-2.5 bg-white/10 rounded-3xl shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[5px] border border-white/30">
+          <main className="p-2 my-8 h-[35rem] flex gap-2.5 border border-darkgray">
 
             {/* Left Credentials Card (Fixed Part) */}
             <ProfileCard />
 
             {/* Right side - dynamic content */}
-            <section className="w-3/4 h-full rounded-3xl bg-linear-180 from-white/30 to-white/0 border border-white/10 backdrop-blur-[5px]">
+            <section className="w-3/4 h-full">
               {children}
             </section>
           </main>

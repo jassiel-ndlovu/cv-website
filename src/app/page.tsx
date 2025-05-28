@@ -1,5 +1,7 @@
+import AboutMe from "./(pages)/about-me/page";
+
 export default function Home() {
   return (
-    <p>About Me page</p>
+    <AboutMe />
   );
 }
