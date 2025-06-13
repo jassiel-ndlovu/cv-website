@@ -1,8 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Chess from "./cards/chess";
+import Olympiads from "./cards/olympiads"
+import Drawing from "./cards/drawing"
 import { motion, AnimatePresence } from "framer-motion";
 import { DM_Serif_Text } from "next/font/google";
+import Programming from "./cards/programming";
+import Design from "./cards/design";
 
 const dmSerifText = DM_Serif_Text({
   weight: "400",
@@ -40,7 +45,7 @@ export default function AboutMe() {
 
   return (
     <section className="flex h-full gap-2">
-      <article className="w-96 h-full p-2 border border-darkgray">
+      <article className="w-96 h-full shrink-0 p-2 border border-darkgray">
         <AnimatePresence mode="wait">
           <motion.div
             key={greetings[index].greeting}
@@ -68,8 +73,18 @@ export default function AboutMe() {
         <Description />
       </article>
       
-      <div className="border border-darkgray">
-
+      <div className="flex flex-col w-full border border-darkgray">
+        <div className="w-full flex">
+          <Chess />
+          <Olympiads />
+        </div>
+        <div className="w-full h-full flex">
+          <Programming />
+          <div className="w-full h-full flex flex-col">
+            <Drawing />
+            <Design />
+          </div>
+        </div>
       </div>
     </section>
   );

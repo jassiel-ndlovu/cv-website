@@ -28,8 +28,8 @@ export default function Nav() {
 
   return (
     <div className="w-full my-2">
-      <nav className="flex items-center gap-8 mx-auto w-fit py-1 px-4 bg-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.2)] backdrop-blur-[5px] border border-white/30">
-        <NavLink url="/about" name="About Me" activePage={pathname === "/" || pathname === "/about-me"} />
+      <nav className="flex items-center gap-8 mx-auto w-fit py-1 px-4 bg-white/10 border-contrast">
+        <NavLink url="/about-me" name="About Me" activePage={pathname === "/" || pathname === "/about-me"} />
         <NavLink url="/education" name="Education" activePage={pathname === "/education"} />
         <NavLink url="/projects" name="Projects" activePage={pathname === "/projects"} />
         <NavLink url="/contact" name="Contact" activePage={pathname === "/contact"} />

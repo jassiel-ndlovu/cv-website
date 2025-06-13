@@ -26,7 +26,7 @@ function SocialIcon({ url, icon }: SocialIconsProps) {
 export default function ProfileCard() {
   return (
     <section 
-      className="flex flex-col justify-between w-72 h-full bg-cover bg-center"
+      className="flex flex-col justify-between w-72 h-full shrink-0 bg-cover bg-center"
       style={{ backgroundImage: "url('/profile-card-background.jpg')" }}
     >
       <div className="h-3/4 p-4 flex flex-col items-center justify-center gap-1">

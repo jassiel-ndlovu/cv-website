@@ -34,7 +34,7 @@ export default function RootLayout({
             <ProfileCard />
 
             {/* Right side - dynamic content */}
-            <section className="w-3/4 h-full">
+            <section className="w-full h-full">
               {children}
             </section>
           </main>
